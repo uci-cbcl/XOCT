@@ -1,0 +1,21 @@
+python train2d.py \
+    --dataroot ./octa-500/OCT2OCTA6M_3D \
+    --name unet2d_gn_6M \
+    --model UNet2D \
+    --norm_proj \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --lambda_L1_2D 10 \
+    --lambda_Perceptual_2D 0 \
+    --dataset_mode alignedoct2octa2d \
+    --preprocess crop \
+    --norm group \
+    --pool_size 0 \
+    --crop_size 256 \
+    --batch_size 8 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 0 \
+    --no_flip \
+    --save_epoch_freq 50

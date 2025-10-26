@@ -1,0 +1,19 @@
+python test3d_3M.py \
+    --dataroot ./octa-500/OCT2OCTA3M_3D \
+    --checkpoints_dir ./checkpoints_3M \
+    --name unet3dmsff_gn_3M \
+    --test_name unet3dmsff_gn_3M \
+    --model UNet3DMSFF \
+    --add_scale \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --dataset_mode alignedoct2octaall \
+    --preprocess none \
+    --norm group \
+    --batch_size 1 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 0 \
+    --num_test 1000000 \
+    --which_epoch latest

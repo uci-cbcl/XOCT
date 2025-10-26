@@ -1,0 +1,22 @@
+python train3d.py \
+    --dataroot ./octa-500/OCT2OCTA3M_3D \
+    --name xoct_gn_3M \
+    --model XOCT \
+    --add_scale \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --lambda_L1_3D 10 \
+    --lambda_L1_2D 10 \
+    --lambda_Perceptual_2D 1 \
+    --dataset_mode alignedoct2octaall \
+    --preprocess crop \
+    --norm group \
+    --pool_size 0 \
+    --crop_size 96 \
+    --batch_size 1 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 0 \
+    --no_flip \
+    --save_epoch_freq 50

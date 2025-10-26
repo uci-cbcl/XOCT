@@ -1,0 +1,19 @@
+python test2d_3M.py \
+    --dataroot ./octa-500/OCT2OCTA3M_3D \
+    --checkpoints_dir ./checkpoints_3M \
+    --name unet2d_gn_3M \
+    --test_name unet2d_gn_3M \
+    --model UNet2D \
+    --norm_proj \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --dataset_mode alignedoct2octa2d \
+    --preprocess none \
+    --norm group \
+    --batch_size 1 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 1 \
+    --num_test 1000000 \
+    --which_epoch latest

@@ -1,0 +1,19 @@
+python test3d_6M.py \
+    --dataroot ./octa-500/OCT2OCTA6M_3D \
+    --checkpoints_dir ./checkpoints_6M \
+    --name xoct_gn_6M \
+    --test_name xoct_gn_6M \
+    --model XOCT \
+    --add_scale \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --dataset_mode alignedoct2octaall \
+    --preprocess none \
+    --norm group \
+    --batch_size 1 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 1 \
+    --num_test 1000000 \
+    --which_epoch latest

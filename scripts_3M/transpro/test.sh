@@ -1,0 +1,20 @@
+python test3d_3M.py \
+    --dataroot ./octa-500/OCT2OCTA3M_3D \
+    --checkpoints_dir ./checkpoints_3M \
+    --name transpro_gn_3M \
+    --test_name transpro_gn_3M \
+    --model TransPro \
+    --direction AtoB \
+    --base_ch_g 64 \
+    --max_ch_g 512 \
+    --dataset_mode alignedoct2octaall \
+    --preprocess none \
+    --norm group \
+    --batch_size 1 \
+    --input_nc 1 \
+    --output_nc 1 \
+    --gpu_ids 0 \
+    --num_test 1000000 \
+    --which_epoch latest \
+    --hcg_path ./pretrain_weights/unet2dmean_gn_3M/latest_net_G.pth \
+    --vpg_path ./pretrain_weights/vpg.pth
