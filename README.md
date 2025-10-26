@@ -3,7 +3,7 @@
 [![Paper (MICCAI 2025)](https://img.shields.io/badge/Paper-MICCAI%202025-blue)](https://papers.miccai.org/miccai-2025/paper/4977_paper.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.07455-b31b1b)](https://arxiv.org/abs/2509.07455)
 [![Springer](https://img.shields.io/badge/Springer-Link-orange)](https://link.springer.com/chapter/10.1007/978-3-032-04965-0_65)
-
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-Model%20Checkpoints-yellow)](https://huggingface.co/pooyakhosravi/xoct)
 
 <p align="center">
   <img src="assets/xoct.png" width="80%">
@@ -87,6 +87,12 @@ bash scripts_6M/xoct/train.sh
 bash scripts_3M/xoct/test.sh
 bash scripts_3M/xoct/eval.sh
 ```
+---
+
+### 📦 Model Checkpoints
+Pretrained XOCT model weights are available on **Hugging Face**:
+
+➡️ **[https://huggingface.co/pooyakhosravi/xoct](https://huggingface.co/pooyakhosravi/xoct)**  
 
 ---
 
@@ -114,4 +120,5 @@ If you find this work useful, please consider citing:
   year={2025},
   organization={Springer}
 }
+
 ```
